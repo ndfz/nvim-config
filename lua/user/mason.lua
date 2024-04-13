@@ -16,6 +16,7 @@ function M.config()
     "bashls",
     "jsonls",
     "rust_analyzer",
+    "elixirls"
   }
 
   require("mason").setup {

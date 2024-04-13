@@ -65,6 +65,21 @@ function M.config()
   local lspconfig = require "lspconfig"
   local icons = require "user.icons"
 
+  local capabilities = vim.lsp.protocol.make_client_capabilities()
+  capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+  lspconfig.elixirls.setup {
+    cmd = { "/home/ndfz/.elixir-ls/release/language_server.sh" },
+    capabilities = capabilities,
+    flags = {
+      debounce_text_changes = 150,
+    },
+    elixirLS = {
+      dialyzerEnabled = false,
+      fetchDeps = false,
+    },
+  }
+
   local servers = {
     "lua_ls",
     "cssls",
