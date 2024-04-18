@@ -74,6 +74,11 @@ function M.config()
       ignore_list = {},
     },
 
+    git = {
+      enable = false,
+      ignore = true,
+    },
+
     diagnostics = {
       enable = true,
       show_on_dirs = false,

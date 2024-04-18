@@ -92,6 +92,7 @@ function M.config()
     "jsonls",
     "yamlls",
     "rust_analyzer",
+    "gleam",
   }
 
   local default_diagnostic_config = {
