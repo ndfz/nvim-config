@@ -16,6 +16,8 @@ function M.config()
     sync_root_with_cwd = true,
     view = {
       relativenumber = true,
+      adaptive_size = true,
+      side = "right",
     },
     renderer = {
       add_trailing = false,
