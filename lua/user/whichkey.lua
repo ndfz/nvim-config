@@ -24,6 +24,14 @@ function M.config()
       l = { "<cmd>+tabmove<cr>", "Move Right" },
     },
     T = { name = "Treesitter" },
+    o = { name = "Obsidian",
+      t = { ":ObsidianToday<CR>", "Today" },
+      n = { ":ObsidianNew<CR>", "New" },
+      s = { ":ObsidianSearch<CR>", "Search" },
+      i = { ":ObsidianPasteImg<CR>", "Paste Img" },
+      r = { ":ObsidianRename<CR>", "Rename" },
+      st = { ":ObsidianTags<CR>", "Tags" },
+    },
   }
 
   local which_key = require "which-key"

@@ -11,6 +11,7 @@ keymap("n", "<C-i>", "<C-i>", opts)
 keymap("n", "<m-j>", "<C-w>j", opts)
 keymap("n", "<m-k>", "<C-w>k", opts)
 keymap("n", "<m-l>", "<C-w>l", opts)
+keymap("n", "<m-h>", "<C-w>h", opts)
 keymap("n", "<m-tab>", "<c-6>", opts)
 
 keymap("n", "n", "nzz", opts)
@@ -48,6 +49,7 @@ vim.api.nvim_set_keymap('t', '<C-;>', '<C-\\><C-n>', opts)
 keymap("n", "<C-s>", ":w<CR>", opts)
 
 -- obsidian
+keymap("n", "<leader>oo", ":ObsidianOpen<CR>", opts)
 keymap("n", "<leader>ot", ":ObsidianToday<CR>", opts)
 keymap("n", "<leader>on", ":ObsidianNew<CR>", opts)
 keymap("n", "<leader>os", ":ObsidianSearch<CR>", opts)

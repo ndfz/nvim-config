@@ -1,54 +1,24 @@
-local themes = {
+local t = {
   momiji = "kyoh86/momiji",
   gruber = "blazkowolf/gruber-darker.nvim",
   biscuit = "Biscuit-Colorscheme/nvim",
   sakura = "numToStr/Sakura.nvim",
   sweet_fusion = "DanielEliasib/sweet-fusion",
+  fleet = "felipeagc/fleet-theme-nvim",
+  boo = "rockerBOO/boo-colorscheme-nvim",
+  neg_serg = "neg-serg/neg.nvim",
+  midnight_desert = "CosecSecCot/midnight-desert.nvim",
+  papilio_dehaanii = "keiyakeiya/PapilioDehaanii.vim"
 }
--- local M = {
---   "kyoh86/momiji",
---   lazy = false, -- make sure we load this during startup if it is your main colorscheme
---   priority = 1000, -- make sure to load this before all the other start plugins
--- }
---
--- function M.config()
---   vim.cmd.colorscheme "momiji"
--- end
---
--- return M
-
--- local M = {
---   "blazkowolf/gruber-darker.nvim",
---   lazy = false, -- make sure we load this during startup if it is your main colorscheme
---   priority = 1000, -- make sure to load this before all the other start plugins
--- }
---
--- function M.config()
---   vim.cmd.colorscheme "gruber-darker"
--- end
---
--- return M
-
--- local M = {
---   "Biscuit-Colorscheme/nvim",
---   lazy = false, -- make sure we load this during startup if it is your main colorscheme
---   priority = 1000, -- make sure to load this before all the other start plugins
--- }
---
--- function M.config()
---   vim.cmd.colorscheme "biscuit"
--- end
---
--- return M
 
 local M = {
-  themes.sakura,
-  lazy = false, -- make sure we load this during startup if it is your main colorscheme
-  priority = 1000, -- make sure to load this before all the other start plugins
+  t.fleet,
+  lazy = false,
+  priority = 1000,
 }
 
 function M.config()
-  vim.cmd.colorscheme "sakura"
+  vim.cmd.colorscheme "fleet"
 end
 
 return M
