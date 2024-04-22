@@ -93,6 +93,7 @@ function M.config()
     "yamlls",
     "rust_analyzer",
     "gleam",
+    "phpactor",
   }
 
   local default_diagnostic_config = {

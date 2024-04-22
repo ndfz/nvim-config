@@ -18,6 +18,7 @@ function M.config()
       formatting.prettier,
       formatting.black,
       formatting.prettierd,
+      formatting.phpcsfixer,
       -- formatting.prettier.with {
       --   extra_filetypes = { "toml" },
       --   -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },

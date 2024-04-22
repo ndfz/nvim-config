@@ -16,6 +16,7 @@ function M.config()
     "jsonls",
     "rust_analyzer",
     "elixirls",
+    "phpactor",
   }
 
   require("mason").setup {
