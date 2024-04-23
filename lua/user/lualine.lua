@@ -16,7 +16,7 @@ function M.config()
       lualine_a = {},
       lualine_b = { "branch" },
       lualine_c = { "diagnostics" },
-      lualine_x = { "copilot", "filetype" },
+      lualine_x = { "fileformat", "filetype" },
       lualine_y = { "progress" },
       lualine_z = {},
     },
