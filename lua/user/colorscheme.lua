@@ -8,17 +8,21 @@ local t = {
   boo = "rockerBOO/boo-colorscheme-nvim",
   neg_serg = "neg-serg/neg.nvim",
   midnight_desert = "CosecSecCot/midnight-desert.nvim",
-  papilio_dehaanii = "keiyakeiya/PapilioDehaanii.vim"
+  papilio_dehaanii = "keiyakeiya/PapilioDehaanii.vim",
 }
 
 local M = {
-  t.fleet,
+  t.boo,
   lazy = false,
   priority = 1000,
 }
 
 function M.config()
-  vim.cmd.colorscheme "fleet"
+  require("boo-colorscheme").use {
+    italic = false,
+    theme = "crimson_moonlight",
+  }
+  -- vim.cmd.colorscheme "bo"
 end
 
 return M
