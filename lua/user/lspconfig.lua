@@ -94,6 +94,7 @@ function M.config()
     "rust_analyzer",
     "gleam",
     "phpactor",
+    "bashls",
   }
 
   local default_diagnostic_config = {

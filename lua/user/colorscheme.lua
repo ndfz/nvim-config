@@ -22,7 +22,7 @@ function M.config()
     italic = false,
     theme = "crimson_moonlight",
   }
-  -- vim.cmd.colorscheme "bo"
+  -- vim.cmd.colorscheme "gruber-darker"
 end
 
 return M

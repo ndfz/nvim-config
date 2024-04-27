@@ -17,7 +17,7 @@ function M.config()
       },
     },
 
-    notes_subdir = "Notes",
+    notes_subdir = "notes",
     log_level = vim.log.levels.INFO,
     completion = {
       nvim_cmp = true,

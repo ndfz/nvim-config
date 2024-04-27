@@ -6,7 +6,7 @@ local M = {
 
 function M.config()
   require("nvim-treesitter.configs").setup {
-    ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "rust", "elixir", "php" },
+    ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "rust", "elixir", "php", "bash" },
     highlight = {
       enable = true,
     },
