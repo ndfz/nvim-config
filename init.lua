@@ -30,8 +30,9 @@ spec "user.indentline"
 spec "user.toggleterm"
 spec "user.wakatime"
 spec "user.leap"
-spec "user.pomo"
 spec "user.obsidian"
 spec "user.colorizer"
 spec "user.tabby"
 require "user.lazy"
+
+vim.filetype.add({ extension = { purs = 'purescript' }})

@@ -17,7 +17,7 @@ function M.config()
       },
     },
 
-    notes_subdir = "notes",
+    notes_subdir = "daily",
     log_level = vim.log.levels.INFO,
     completion = {
       nvim_cmp = true,

@@ -80,6 +80,16 @@ function M.config()
     },
   }
 
+  lspconfig.purescriptls.setup {
+    on_attach = M.on_attach,
+    capabilities = M.common_capabilities(),
+    cmd = { "purescript-language-server", "--stdio" },
+    flags = {
+      debounce_text_changes = 150,
+    },
+    filetypes = { "purescript", "purs" },
+  }
+
   local servers = {
     "lua_ls",
     "cssls",
