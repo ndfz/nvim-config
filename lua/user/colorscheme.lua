@@ -1,11 +1,11 @@
 local M = {
-  "colepeters/spacemacs-theme.vim",
+  "aktersnurra/no-clown-fiesta.nvim",
   lazy = false,
   priority = 1000,
 }
 
 function M.config()
-  vim.cmd.colorscheme "spacemacs-theme"
+  vim.cmd.colorscheme "no-clown-fiesta"
 end
 
 return M
