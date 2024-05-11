@@ -17,6 +17,7 @@ function M.config()
     "rust_analyzer",
     "elixirls",
     "phpactor",
+    "gopls",
   }
 
   require("mason").setup {

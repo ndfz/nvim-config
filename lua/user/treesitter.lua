@@ -17,6 +17,7 @@ function M.config()
       "php",
       "bash",
       "purescript",
+      "go",
     },
     highlight = {
       enable = true,

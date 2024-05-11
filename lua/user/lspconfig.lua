@@ -90,6 +90,8 @@ function M.config()
     filetypes = { "purescript", "purs" },
   }
 
+  lspconfig.gopls.setup {}
+
   local servers = {
     "lua_ls",
     "cssls",
