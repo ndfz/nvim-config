@@ -18,6 +18,7 @@ function M.config()
     "elixirls",
     "phpactor",
     "gopls",
+    "bufls",
   }
 
   require("mason").setup {

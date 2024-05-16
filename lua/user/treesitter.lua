@@ -18,6 +18,7 @@ function M.config()
       "bash",
       "purescript",
       "go",
+      "proto",
     },
     highlight = {
       enable = true,

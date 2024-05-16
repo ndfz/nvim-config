@@ -92,6 +92,8 @@ function M.config()
 
   lspconfig.gopls.setup {}
 
+  lspconfig.bufls.setup {}
+
   local servers = {
     "lua_ls",
     "cssls",
