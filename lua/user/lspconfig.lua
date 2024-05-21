@@ -94,6 +94,8 @@ function M.config()
 
   lspconfig.bufls.setup {}
 
+  lspconfig.bashls.setup {}
+
   local servers = {
     "lua_ls",
     "cssls",
@@ -108,7 +110,6 @@ function M.config()
     "rust_analyzer",
     "gleam",
     "phpactor",
-    "bashls",
   }
 
   local default_diagnostic_config = {
