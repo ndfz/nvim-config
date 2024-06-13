@@ -16,7 +16,6 @@ local function lsp_keymaps(bufnr)
   keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
   keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
   keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-  keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 end
 
 M.on_attach = function(client, bufnr)
@@ -90,11 +89,17 @@ function M.config()
     filetypes = { "purescript", "purs" },
   }
 
-  lspconfig.gopls.setup {}
+  lspconfig.gopls.setup {
+    on_attach = M.on_attach,
+    capabilities = M.common_capabilities(),
+    flags = {
+      debounce_text_changes = 150,
+    },
+  }
 
   lspconfig.bufls.setup {}
-
   lspconfig.bashls.setup {}
+  lspconfig.yamlls.setup {}
 
   local servers = {
     "lua_ls",
@@ -106,7 +111,6 @@ function M.config()
     "pyright",
     "bashls",
     "jsonls",
-    "yamlls",
     "rust_analyzer",
     "gleam",
     "phpactor",

@@ -47,12 +47,5 @@ vim.api.nvim_set_keymap('t', '<C-;>', '<C-\\><C-n>', opts)
 
 -- user
 keymap("n", "<C-s>", ":w<CR>", opts)
-
--- obsidian
-keymap("n", "<leader>oo", ":ObsidianOpen<CR>", opts)
-keymap("n", "<leader>ot", ":ObsidianToday<CR>", opts)
-keymap("n", "<leader>on", ":ObsidianNew<CR>", opts)
-keymap("n", "<leader>os", ":ObsidianSearch<CR>", opts)
-keymap("n", "<leader>oi", ":ObsidianPasteImg<CR>", opts)
-keymap("n", "<leader>or", ":ObsidianRename<CR>", opts)
-keymap("n", "<leader>ost", ":ObsidianTags<CR>", opts)
+keymap('i', 'jj', '<Esc>')
+keymap('n', '<leader>x', ':bd<CR>')

@@ -8,13 +8,13 @@ function M.config()
   wk.register {
     ["<leader>bb"] = { "<cmd>Telescope buffers previewer=false<cr>", "Find" },
     ["<leader>fb"] = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-    ["<leader>fc"] = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
+    ["<leader>fc"] = { "<cmd>Telescope commands<cr>", "Comand history" },
     ["<leader>ff"] = { "<cmd>Telescope find_files<cr>", "Find files" },
-    ["<leader>fp"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
     ["<leader>ft"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
     ["<leader>fh"] = { "<cmd>Telescope help_tags<cr>", "Help" },
-    ["<leader>fl"] = { "<cmd>Telescope resume<cr>", "Last Search" },
     ["<leader>fr"] = { "<cmd>Telescope oldfiles<cr>", "Recent File" },
+    ["<leader>fs"] = {"<cmd>Telescope grep_string<cr>", "Grep String"},
+    ["<leader>fd"] = {"<cmd>Telescope diagnostics<cr>", "Diagnostics"},
   }
 
   local icons = require "user.icons"
@@ -60,20 +60,20 @@ function M.config()
     },
     pickers = {
       live_grep = {
-        theme = "dropdown",
+        theme = "ivy",
       },
 
       grep_string = {
-        theme = "dropdown",
+        theme = "ivy",
       },
 
       find_files = {
-        theme = "dropdown",
+        theme = "ivy",
         previewer = false,
       },
 
       buffers = {
-        theme = "dropdown",
+        theme = "ivy",
         previewer = false,
         initial_mode = "normal",
         mappings = {
@@ -96,22 +96,22 @@ function M.config()
       },
 
       lsp_references = {
-        theme = "dropdown",
+        theme = "ivy",
         initial_mode = "normal",
       },
 
       lsp_definitions = {
-        theme = "dropdown",
+        theme = "ivy",
         initial_mode = "normal",
       },
 
       lsp_declarations = {
-        theme = "dropdown",
+        theme = "ivy",
         initial_mode = "normal",
       },
 
       lsp_implementations = {
-        theme = "dropdown",
+        theme = "ivy",
         initial_mode = "normal",
       },
     },

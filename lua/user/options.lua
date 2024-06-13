@@ -50,8 +50,13 @@ vim.opt.shortmess:append "c"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 
+-- vim.opt.guicursor = 'n-v-c:block,i:block'
+
 vim.g.netrw_banner = 0
 vim.g.netrw_mouse = 2
 
 -- purscript
 vim.filetype.add({ extension = { purs = 'purescript' }})
+
+-- codeium
+vim.g.codeium_enabled = true
