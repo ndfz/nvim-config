@@ -1,11 +1,11 @@
 local M = {
-  "blazkowolf/gruber-darker.nvim",
+  "MyyPo/borrowed.nvim",
   lazy = false,
   priority = 1000,
 }
 
 function M.config()
-  vim.cmd.colorscheme "gruber-darker"
+  vim.cmd.colorscheme "mayu"
 end
 
 return M
