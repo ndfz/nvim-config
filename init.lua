@@ -32,6 +32,9 @@ spec "user.toggleterm"
 spec "user.wakatime"
 spec "user.leap"
 spec "user.tabby"
+spec "user.go"
 require "user.lazy"
 
 vim.filetype.add({ extension = { purs = 'purescript' }})
+
+vim.o.termguicolors = true

@@ -1,15 +1,15 @@
 local M = {
   "nvimtools/none-ls.nvim",
   dependencies = {
-    "nvim-lua/plenary.nvim"
-  }
+    "nvim-lua/plenary.nvim",
+  },
 }
 
 function M.config()
   local null_ls = require "null-ls"
 
   local formatting = null_ls.builtins.formatting
-  local diagnostics =  null_ls.builtins.diagnostics
+  local diagnostics = null_ls.builtins.diagnostics
 
   null_ls.setup {
     debug = false,
@@ -19,6 +19,8 @@ function M.config()
       formatting.black,
       formatting.prettierd,
       formatting.phpcsfixer,
+      formatting.goimports,
+      formatting.golines,
       -- formatting.prettier.with {
       --   extra_filetypes = { "toml" },
       --   -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
@@ -27,6 +29,8 @@ function M.config()
       -- null_ls.builtins.diagnostics.flake8,
       -- diagnostics.flake8,
       null_ls.builtins.completion.spell,
+      -- diagnostics.golangci_lint,
+      diagnostics.yamllint,
     },
   }
 end
